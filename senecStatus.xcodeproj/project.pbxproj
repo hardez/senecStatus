@@ -3,24 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8211D8032554040C0057DA96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8211D8022554040C0057DA96 /* AppDelegate.swift */; };
-		8211D8052554040C0057DA96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8211D8042554040C0057DA96 /* ViewController.swift */; };
 		8211D8072554040F0057DA96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8211D8062554040F0057DA96 /* Assets.xcassets */; };
 		8211D80A2554040F0057DA96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8211D8082554040F0057DA96 /* Main.storyboard */; };
+		8211D815255404430057DA96 /* SenecClient in Frameworks */ = {isa = PBXBuildFile; productRef = 8211D814255404430057DA96 /* SenecClient */; };
+		8211D81D255407950057DA96 /* senecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8211D81C255407950057DA96 /* senecView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8211D7FF2554040C0057DA96 /* senecStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = senecStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8211D8022554040C0057DA96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8211D8042554040C0057DA96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8211D8062554040F0057DA96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8211D8092554040F0057DA96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8211D80B2554040F0057DA96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8211D80C2554040F0057DA96 /* senecStatus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = senecStatus.entitlements; sourceTree = "<group>"; };
+		8211D81C255407950057DA96 /* senecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = senecView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8211D815255404430057DA96 /* SenecClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				8211D8022554040C0057DA96 /* AppDelegate.swift */,
-				8211D8042554040C0057DA96 /* ViewController.swift */,
+				8211D81C255407950057DA96 /* senecView.swift */,
 				8211D8062554040F0057DA96 /* Assets.xcassets */,
 				8211D8082554040F0057DA96 /* Main.storyboard */,
 				8211D80B2554040F0057DA96 /* Info.plist */,
@@ -79,6 +81,9 @@
 			dependencies = (
 			);
 			name = senecStatus;
+			packageProductDependencies = (
+				8211D814255404430057DA96 /* SenecClient */,
+			);
 			productName = senecStatus;
 			productReference = 8211D7FF2554040C0057DA96 /* senecStatus.app */;
 			productType = "com.apple.product-type.application";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = 8211D7F62554040C0057DA96;
+			packageReferences = (
+				8211D813255404430057DA96 /* XCRemoteSwiftPackageReference "SenecClient" */,
+			);
 			productRefGroup = 8211D8002554040C0057DA96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8211D8052554040C0057DA96 /* ViewController.swift in Sources */,
+				8211D81D255407950057DA96 /* senecView.swift in Sources */,
 				8211D8032554040C0057DA96 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8211D813255404430057DA96 /* XCRemoteSwiftPackageReference "SenecClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rohrbecka/SenecClient";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8211D814255404430057DA96 /* SenecClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8211D813255404430057DA96 /* XCRemoteSwiftPackageReference "SenecClient" */;
+			productName = SenecClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8211D7F72554040C0057DA96 /* Project object */;
 }

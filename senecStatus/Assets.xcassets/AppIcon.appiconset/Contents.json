@@ -36,11 +36,13 @@
       "size" : "256x256"
     },
     {
+      "filename" : "sunrise-sunset-icon-12.jpg-1.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "256x256"
     },
     {
+      "filename" : "sunrise-sunset-icon-12.jpg.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
